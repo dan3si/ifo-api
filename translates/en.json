@@ -20,7 +20,7 @@
   "about_listItem9": "30-річчя проголошення / відновлення незалежності країн колишніх СРСР та Югославії, зокрема, України;",
   "about_listItem10": "10 річниця Арабської весни.",
   "leadership_heading": "Our team",
-  "leadership_yasko_name": "Oles' Yasko",
+  "leadership_yasko_name": "Oles Yasko",
   "leadership_yasko_position": "Художній керівник",
   "leadership_yasko_description": "Народний артист України",
   "leadership_zhadko_name": "Victoria Zhadko",
@@ -74,5 +74,11 @@
   "competitionRequirements_programItem_bass_2": "One of concertos on candidate's choice: C.Dittersdorf, J.B.Vanhal, G.Bottesini No.2 h-moll (Exposition of 1st part and Cadenza to 1st part)",
   "competitionRequirements_programItem_bass_3": "Virtuoso piece",
   "competitionRequirements_programItem_bass_4": "Performance of fragments of orchestra parts",
-  "competitionRequirements_programItem_bass_5": "Sight-reading"
+  "competitionRequirements_programItem_bass_5": "Sight-reading",
+  "personInfo_oles_yasko_name": "Oles Yasko",
+  "personInfo_oles_yasko_text": "Ukrainian violinist, director and performer of the National Ensemble of Soloists \"Kyivs'ka Kamerata\". Honored Artist of Ukraine (August 22, 1996). People's Artist of Ukraine (June 24, 2011). Winner of the first prize at the All-Ukrainian violin competition named after MV Lysenko (1979). He has toured in more than 60 countries",
+  "personInfo_victoria_zhadko_name": "Victoria Zhadko",
+  "personInfo_victoria_zhadko_text": "Ukrainian conductor, guitarist, teacher. Honored Artist of Ukraine (1994). Laureate of the International Competition named after S. Prokofiev, V International Competition of Conductors. A. Toscanini in Parma, and the National Competition of Conductors. S. Turchak. In 1986 she graduated from the Voroshilovgrad (now Lugansk) Music School with a degree in MA Pivnya. In 1991 she graduated from the Kyiv Conservatory (now the Tchaikovsky National Academy of Music of Ukraine) in the guitar class of MA Davydov, in 1993 in the symphony conducting class of A. Vlasenko. After graduating from 1997 to 2000 she worked as the chief conductor of the Kharkiv Philharmonic Symphony Orchestra. On the stage of the Kharkiv Opera and Ballet Theater with the staff of the Children's Ballet Theater-Studio of Kharkiv she performed 2 ballets - \"Eupraxia\" by A. Kanershtein and \"The Nutcracker\" by P. Tchaikovsky. Since 1996 she has been working as an associate professor, and since 1997 as a professor of guitar and symphony conducting at the Kyiv Institute of Culture. Founder of the first in Ukraine Department of Early and Chamber Music at the Kyiv Institute of Culture. She has collaborated with leading symphonic groups of Ukraine - the National Symphony Orchestra of Ukraine, the orchestra of the National Opera of Ukraine, symphony orchestras of Odessa, Luhansk, Lviv and others. As a guitarist and conductor, she has toured in Russia, Poland, Denmark, the Netherlands, Belgium, Finland, Germany, France, Hungary and the United Kingdom. Since 1989 she has performed numerous stock recordings on Ukrainian television and Ukrainian radio, and since 1993 she has been the conductor of the Symphony Orchestra of the National Radio Company of Ukraine. The first performer of a number of works by contemporary Ukrainian and foreign authors. Author of the program for higher educational institutions in the specialty \"Classical Guitar\". Organizer of master classes and refresher courses for guitar teachers in primary and secondary schools of Ukraine. Among her students are winners of numerous regional and international competitions and festivals.",
+  "personInfo_dmytro_tavanets_name": "Dmytro Tavanets",
+  "personInfo_dmytro_tavanets_text": "Tavanets Dmytro Ivanovych - Honored Artist of Ukraine, pianist, soloist and executive director of the National Ensemble of Soloists \"Kyivs'ka Kamerata\". Founder and artistic director of the International Chamber Music Session (Kyiv). He graduated from the National Music Academy of Ukraine. P.I. Tchaikovsky. Winner and diploma winner of national and international competitions."
 }
