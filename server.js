@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 const fs = require('fs');
 
-const FrontendURL = 'http://iforchestra.com';
+const FrontendURL = 'http://localhost:3000';
 
 app.get('/translates/en', (req, res) => {
   res.set('Access-Control-Allow-Origin', FrontendURL);
