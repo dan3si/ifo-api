@@ -3,31 +3,32 @@ const app = express();
 const port = process.env.PORT || 5000;
 const fs = require('fs');
 
-const FrontendURL = 'http://iforchestra.com';
-
-app.get('/translates/en', (req, res) => {
-  res.set('Access-Control-Allow-Origin', FrontendURL);
-  res.send(fs.readFileSync('./translates/en.json'));
+app.use('/', (req, res, next) => {
+  res.set('Access-Control-Allow-Origin', '*');
+  next();
 });
 
-app.get('/translates/ua', (req, res) => {
-  res.set('Access-Control-Allow-Origin', FrontendURL);
-  res.send(fs.readFileSync('./translates/ua.json'));
+app.get('/translates/:lang', (req, res) => {
+  res.send(fs.readFileSync(`./translates/${req.params.lang}.json`));
 });
 
-app.get('/person_images/oles_yasko.jpg', (req, res) => {
-  res.set('Access-Control-Allow-Origin', FrontendURL);
-  res.send(fs.readFileSync('./person_images/oles_yasko.jpg'));
+app.get('/person_images/:name', (req, res) => {
+  res.send(fs.readFileSync(`./person_images/${req.params.name}.jpg`));
 });
 
-app.get('/person_images/victoria_zhadko.jpg', (req, res) => {
-  res.set('Access-Control-Allow-Origin', FrontendURL);
-  res.send(fs.readFileSync('./person_images/victoria_zhadko.jpg'));
+app.get('/events', (req, res) => {
+  res.send(fs.readFileSync('./events/events.json'));
 });
 
-app.get('/person_images/dmytro_tavanets.jpg', (req, res) => {
-  res.set('Access-Control-Allow-Origin', FrontendURL);
-  res.send(fs.readFileSync('./person_images/dmytro_tavanets.jpg'));
+app.get('/events/:event', (req, res) => {
+  const events = JSON.parse(fs.readFileSync('./events/events.json'));
+  const requestedEvent = events.find(ev => ev.id === req.params.event);
+
+  res.send(JSON.stringify(requestedEvent));
+});
+
+app.get('/events/images/:id', (req, res) => {
+  res.send(fs.readFileSync(`./events/images/${req.params.id}.jpg`));
 });
 
 app.listen(port, () => console.log('listening'));
