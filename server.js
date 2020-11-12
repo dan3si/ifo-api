@@ -11,6 +11,7 @@ const authTokens = [];
 app.use(cors());
 
 app.get('/translates/:lang', (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*');
   res.send(fs.readFileSync(`./translates/${req.params.lang}.json`));
 });
 
