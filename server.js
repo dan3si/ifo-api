@@ -8,7 +8,7 @@ const multer  = require("multer");
 const authTokens = [];
 
 app.use('/', (req, res, next) => {
-  res.set('Access-Control-Allow-Origin', '*');
+  res.set('Access-Control-Allow-Origin', 'http://iforchestra.com');
   res.set('Access-Control-Allow-Methods', 'DELETE');
   next();
 });
