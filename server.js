@@ -4,17 +4,16 @@ const port = process.env.PORT || 5000;
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const multer  = require("multer");
-const cors = require('cors');
 
 const authTokens = [];
 
 app.use('/', (req, res, next) => {
   res.set('Access-Control-Allow-Origin', '*');
+  res.set('Access-Control-Allow-Methods', 'DELETE');
   next();
 });
 
 app.get('/translates/:lang', (req, res) => {
-  res.set('Access-Control-Allow-Origin', '*');
   res.send(fs.readFileSync(`./translates/${req.params.lang}.json`));
 });
 
