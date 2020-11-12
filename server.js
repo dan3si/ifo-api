@@ -8,7 +8,10 @@ const cors = require('cors');
 
 const authTokens = [];
 
-app.use(cors());
+app.use('/', (req, res, next) => {
+  res.set('Access-Control-Allow-Origin', '*');
+  next();
+});
 
 app.get('/translates/:lang', (req, res) => {
   res.set('Access-Control-Allow-Origin', '*');
