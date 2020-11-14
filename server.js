@@ -70,7 +70,7 @@ app.post('/events', bodyParser.text(), (req, res) => {
     }).single('image');
   
     upload(req, res, (err) => {
-      res.send('ok');
+      res.send('Success! <a href="http://admin.iforchestra.com">Go back</h2>');
     })
   }
 });
