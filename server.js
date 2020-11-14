@@ -40,9 +40,17 @@ app.post('/events', bodyParser.text(), (req, res) => {
   let events = JSON.parse(fs.readFileSync('./events/events.json'));
   
   if (typeof req.body === 'string') {
-    const id = String(Math.max(
-      ...events.map(ev => +ev.id)
-    ) + 1);
+    const id = String(
+      events.reduce(
+        (max, el) => {
+          return +el.id > max
+          ? +el.id
+          : max
+        },
+        0
+      ) + 1
+    );
+    
     const { title, description } = JSON.parse(req.body);
 
     events = [{ id, title, description}, ...events];
