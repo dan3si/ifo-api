@@ -13,10 +13,6 @@ app.use('/', (req, res, next) => {
   next();
 });
 
-app.get('/translates/:lang', (req, res) => {
-  res.send(fs.readFileSync(`./translates/${req.params.lang}.json`));
-});
-
 app.get('/person_images/:name', (req, res) => {
   res.send(fs.readFileSync(`./person_images/${req.params.name}.jpg`));
 });
