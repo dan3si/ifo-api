@@ -8,11 +8,6 @@ server.use('/', (req, res, next) => {
   next();
 });
 
-server.get('/person_images/:name', (req, res) => {
-  const image = fs.readFileSync(`./person_images/${req.params.name}.jpg`); 
-  res.send(image);
-});
-
 server.get('/events', (req, res) => {
   const events = fs.readFileSync('./events/events.json');
   res.send(events);
